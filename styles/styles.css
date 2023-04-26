@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #141B1C;
+}
+
+.price {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card {
+  height: 770px;
+  width: 380px;
+  margin: 0 9px;
+  background-color: #334247;
+}
+
+.price-card__title {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  color: #fff;
+}
+
+.sub-title {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sub-plan {
+  font-size: 35px;
+}
+
+.price-card__price {
+  height: 105px;
+  display: flex;
+}
+.price-card__price span {
+  margin: auto;
+  color: #fff;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.price-card__price_basic {
+  background-color: #5BB189;
+}
+
+.price-card__price_bussines {
+  background-color: #3A6BA5;
+}
+
+.price-card__price_webshop {
+  background-color: #EC632A;
+}
+
+.price-card__description {
+  display: flex;
+  height: 116px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+.price-card__description .description {
+  text-align: center;
+  width: 327.5px;
+  margin: auto;
+}
+.price-card__description .description_webshop {
+  font-weight: 400;
+}
+
+.price-card__options-list {
+  height: 300px;
+  color: #fff;
+  font-weight: 300;
+}
+.price-card__options-list .price-card__options-list_option:nth-child(odd) {
+  background-color: #2A3438;
+}
+.price-card__options-list .tick {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+.price-card__options-list_option {
+  align-items: center;
+  display: flex;
+  height: 50px;
+}
+
+.price-card_basic .button {
+  background-color: #5BB189;
+}
+
+.price-card_bussines .price-card__title {
+  position: relative;
+}
+.price-card_bussines img {
+  filter: invert(34%) sepia(90%) saturate(356%) hue-rotate(173deg) brightness(95%) contrast(94%);
+}
+.price-card_bussines .button {
+  background-color: #3A6BA5;
+}
+.price-card_bussines .popular {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 34px;
+  left: 260px;
+  z-index: 0;
+}
+.price-card_bussines .popular_title {
+  padding: 4px 40px;
+  background-color: #DC3F45;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.price-card_webshop img {
+  filter: invert(47%) sepia(57%) saturate(2373%) hue-rotate(345deg) brightness(96%) contrast(93%);
+}
+.price-card_webshop .button {
+  background-color: #EC632A;
+}
+
+.button-container {
+  height: 119px;
+  display: flex;
+}
+.button-container .button {
+  cursor: pointer;
+  font-weight: 400;
+  margin: auto;
+  padding: 12px 27px;
+  height: 40px;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.2s;
+}
+.button-container .button:hover {
+  opacity: 60%;
+}
+
+/*# sourceMappingURL=styles.css.map */
