@@ -4,7 +4,6 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
-
 }
 
 body {
@@ -71,17 +70,7 @@ body {
 
 .price-card__price_webshop {
     background-color: #EC632A;
-
-
 }
-
-// .price-card__description {
-//     display: table-cell;
-//     height: 116px;
-//     font-size: 15px;
-//     text-align: center;
-//     vertical-align: middle;
-// }
 
 .price-card__description {
     display: flex;
@@ -89,8 +78,6 @@ body {
     color: #fff;
     font-size: 15px;
     font-weight: 300;
-
-    
 }
 
 .description {
@@ -157,7 +144,6 @@ body {
         background-color: #DC3F45;
         text-transform: uppercase;
         font-size: 14px;
-
     }
 
 }
@@ -184,10 +170,8 @@ body {
         height: 40px;
         border-radius: 20px;
         color: #fff;
-
         transition: .2s;
-
-
+        
         &:hover {
             opacity: 60%;
         }
