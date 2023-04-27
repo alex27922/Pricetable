@@ -163,19 +163,21 @@ body {
 .button-container {
     height: 119px;
     display: flex;
+}
 
-    .button {
-        cursor: pointer;
-        font-weight: 400;
-        margin: auto;
-        padding: 12px 27px;
-        height: 40px;
-        border-radius: 20px;
-        color: $white;
-        transition: .2s;
 
-        &:hover {
-            opacity: 60%;
-        }
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    margin: auto;
+    padding: 12px 27px;
+    height: 40px;
+    border-radius: 20px;
+    color: $white;
+    transition: .2s;
+
+    &:hover {
+        opacity: 60%;
     }
 }
