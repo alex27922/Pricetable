@@ -75,12 +75,14 @@ body {
   font-size: 15px;
   font-weight: 300;
 }
-.price-card__description .description {
+
+.description {
   text-align: center;
   width: 327.5px;
   margin: auto;
 }
-.price-card__description .description_webshop {
+
+.description_webshop {
   font-weight: 400;
 }
 
