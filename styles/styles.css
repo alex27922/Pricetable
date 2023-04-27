@@ -1,3 +1,10 @@
+.price-card {
+  height: 770px;
+  width: 380px;
+  margin: 0 9px;
+  background-color: #334247;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,13 +23,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.price-card {
-  height: 770px;
-  width: 380px;
-  margin: 0 9px;
-  background-color: #334247;
 }
 
 .price-card__title {

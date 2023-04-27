@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'price-cards';
 
 * {
     box-sizing: border-box;
@@ -20,12 +21,6 @@ body {
     align-items: center;
 }
 
-.price-card {
-    height: 770px;
-    width: 380px;
-    margin: 0 9px;
-    background-color: $card-base;
-}
 
 .price-card__title {
     overflow: hidden;
