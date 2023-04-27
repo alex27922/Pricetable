@@ -1,0 +1,178 @@
+@import 'variables';
+@import 'price-cards';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: $background;
+}
+
+.price {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.price-card__title {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    color: $white;
+
+}
+
+.sub-title {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.sub-plan {
+    margin: 0;
+    font-size: 35px;
+}
+
+.price-card__price {
+    height: 105px;
+    display: flex;
+
+    span {
+        margin: auto;
+        color: $white;
+        font-size: 55px;
+        font-weight: 700;
+    }
+}
+
+.price-card__price_basic {
+    background-color: $basic-theme;
+}
+
+.price-card__price_bussines {
+    background-color: $bussines-theme;
+}
+
+.price-card__price_webshop {
+    background-color: $webshop-theme;
+}
+
+.price-card__description {
+    display: flex;
+    height: 116px;
+    color: $white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.description {
+    text-align: center;
+    width: 327.5px;
+    margin: auto;
+}
+
+.description_webshop {
+    font-weight: 400;
+}
+
+.price-card__options-list {
+    height: 300px;
+    color: $white;
+    font-weight: 300;
+
+    .price-card__options-list_option:nth-child(odd) {
+        background-color: $gray;
+    }
+
+    .tick {
+        padding: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    &_option {
+        align-items: center;
+        display: flex;
+        height: 50px;
+    }
+}
+
+.price-card_basic {
+    .button {
+        background-color: $basic-theme;
+    }
+}
+
+.price-card_bussines {
+    .price-card__title {
+        position: relative;
+    }
+
+    img {
+        filter: invert(34%) sepia(90%) saturate(356%) hue-rotate(173deg) brightness(95%) contrast(94%);
+    }
+
+    .button {
+        background-color: $bussines-theme;
+    }
+
+    .popular {
+        position: absolute;
+        transform: rotate(45deg);
+        top: 34px;
+        left: 260px;
+        z-index: 0;
+    }
+
+    .popular_title {
+        padding: 4px 40px;
+        background-color: $die;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+}
+
+.price-card_webshop {
+    img {
+        filter: invert(47%) sepia(57%) saturate(2373%) hue-rotate(345deg) brightness(96%) contrast(93%);
+    }
+
+    .button {
+        background-color: $webshop-theme;
+    }
+}
+
+.button-container {
+    height: 119px;
+    display: flex;
+}
+
+
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    margin: auto;
+    padding: 12px 27px;
+    height: 40px;
+    border-radius: 20px;
+    color: $white;
+    transition: .2s;
+
+    &:hover {
+        opacity: 60%;
+    }
+}
